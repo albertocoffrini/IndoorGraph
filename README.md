@@ -10,7 +10,6 @@ for complex indoor environments such as:
 - Airports
 - Shopping malls
 - Commercial centers
-- Large indoor infrastructures
 
 The system uses structured graphs implemented with NetworkX
 and integrates a Small Language Model (SLM) through Ollama
@@ -72,7 +71,7 @@ PROFILE
 Profiles can specify:
 - corridors
 - stairs
-- other routing preferences
+- elevator
 
 Using:
 
@@ -85,7 +84,7 @@ IMPORTANT NOTE
 --------------------------------------------------------
 
 The graph currently used must be manually selected
-inside the source code.
+inside the source code at row: "from Graphs.OrioCenter_graph_spec import (..."
 
 At the moment, the project is configured for:
 
@@ -129,6 +128,10 @@ Give me directions from W to A5
 or
 
 How do I get from W to A5?
+
+or if there're problem detecting the profile variable
+
+How do I get from W to A5 with profile all?
 
 ========================================================
 INSTALLATION
@@ -191,52 +194,6 @@ WORKFLOW
 
 4. The graph output will be generated automatically.
 
-========================================================
-DATA FOLDER
-========================================================
-
-The Data folder contains project resources and outputs.
-
---------------------------------------------------------
-Data/grafica
---------------------------------------------------------
-
-Contains:
-- Computed route plots
-- Example SVG projects
-- Affinity vector projects
-- Visual assets
-
---------------------------------------------------------
-Data/Result and validation
---------------------------------------------------------
-
-Contains:
-- System output files generated during tests
-- Validation prompts
-- Validation datasets
-- Full validation results
-
-========================================================
-TECHNOLOGIES USED
-========================================================
-
-- Python
-- NetworkX
-- Ollama
-- Small Language Models (SLM)
-- SVG-based graph extraction
-
-========================================================
-PROJECT GOAL
-========================================================
-
-The goal of IndoorLLM is to combine:
-
-- Structured graph navigation
-- Indoor routing
-- Natural language interaction
-- Lightweight local LLM systems
 
 to build intelligent indoor navigation systems
 for real-world environments.
