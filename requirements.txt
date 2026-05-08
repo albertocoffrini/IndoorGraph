@@ -1,0 +1,12 @@
+networkx
+igraph
+graphviz
+pyqt6
+opencv-python
+numpy
+scikit-image
+scipy
+pytesseract
+matplotlib
+requests
+ollama
