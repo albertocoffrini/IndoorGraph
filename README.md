@@ -1,8 +1,7 @@
 # IndoorGraph
-========================================================
-IndoorLLM
+
+IndoorLLMGraph
 LLM + Graph-Based Indoor Navigation System
-========================================================
 
 IndoorLLM is a graph-based indoor navigation pipeline designed
 for complex indoor environments such as:
